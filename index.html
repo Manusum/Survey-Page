@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">Welcome to my website</h1>
+        <p id="description">Please complete the form</p>
+        <div class="main-content">
+            <div class="form-content">
+                <form id="survey-form">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+
+                    <label for="age" id="number-label">Enter your rate humor from 1 as bad to 10 as great:</label>
+                    <input type="number" id="number" min="1" max="10" required placeholder="Enter your rate">
+
+                    <label for="dropdown">How can I identify you?</label>
+                    <select id="dropdown">
+                        <option value="student">student</option>
+                        <option value="job">job</option>
+                        <option value="learner">learner</option>
+                        <option value="notosay">prefer not to say</option>
+                        <option value="other">other</option>
+                    </select>
+
+                    <fieldset>
+                        <legend>Would you recommend me to a friend?</legend>
+                        <input type="radio" name="recommend" checked id="definitely" value="definitely">
+                        <label for="definitely">Definitely</label><br/>
+
+                        <input type="radio" name="recommend" id="maybe" value="maybe">
+                        <label for="maybe">Maybe</label><br/>
+
+                        <input type="radio" name="recommend" id="notsure" value="notsure">
+                        <label for="notsure">Not sure</label><br/>
+                    </fieldset>
+
+                    <p>What would you like to see improved?</p>
+                    <input type="checkbox" id="martial-arts" name="martial-arts" value="martial-arts">
+                    <label for="martial-arts">Martial Arts</label><br>
+
+                    <input type="checkbox" id="cooking" name="cooking" value="cooking">
+                    <label for="cooking">Cooking</label><br>
+
+                    <input type="checkbox" id="languages" name="languages" value="languages">
+                    <label for="languages">Languages</label><br>
+
+                    <input type="checkbox" id="sciences" name="sciences" value="sciences">
+                    <label for="sciences">Sciences</label><br>
+
+                    <input type="checkbox" id="travel" name="travel" value="travel">
+                    <label for="travel">Travel</label><br>
+
+                    <label for="comment">Comments or suggestions:</label>
+                    <textarea id="comment" cols="50" rows="4">Enter your comments or suggestions here.</textarea>
+
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
